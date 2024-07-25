@@ -6,27 +6,27 @@ public class Main {
     public static void main(String[] args) {
         // Testando TabelaHash
         TabelaHash<String, String> tabelaHash = new TabelaHash<>(10);
-        tabelaHash.inserir("Flavio", "dados_usuario1");
-        tabelaHash.inserir("Nielson", "dados_usuario2");
-        tabelaHash.inserir("Ericlecio", "dados_usuario3");
-        tabelaHash.inserir("Marcos", "dados_usuario4");
-        
-
-        System.out.println("Conteúdo da Tabela Hash:");
-        tabelaHash.imprimirTabela();
-        System.out.println("--------------------------------------------");
+//        tabelaHash.inserir("Flavio", "dados_usuario1");
+//        tabelaHash.inserir("Nielson", "dados_usuario2");
+//        tabelaHash.inserir("Ericlecio", "dados_usuario3");
+//        tabelaHash.inserir("Marcos", "dados_usuario4");
+//        
+//
+//        System.out.println("Conteúdo da Tabela Hash:");
+//        tabelaHash.imprimirTabela();
+//        System.out.println("--------------------------------------------");
 
         System.out.println("Buscar Dados de Sessão:");
-        System.out.println("Flavio: " + tabelaHash.buscar("Flavio"));
+        System.out.println("Flavio: " + tabelaHash.buscar("Flavio", "dados_usuario1"));
         System.out.println("Nielson: " + tabelaHash.buscar("Nielson"));
         System.out.println("Ericlecio: " + tabelaHash.buscar("Ericlecio"));
         System.out.println("Marcos: " + tabelaHash.buscar("Marcos"));
 
-        tabelaHash.remover("Ericlecio");
-
-        System.out.println("Conteúdo da Tabela Hash após remover Ericlecio:");
-        tabelaHash.imprimirTabela();
-        System.out.println("Ericlecio: " + tabelaHash.buscar("Ericlecio"));
+//        tabelaHash.remover("Ericlecio");
+//
+//        System.out.println("Conteúdo da Tabela Hash após remover Ericlecio:");
+//        tabelaHash.imprimirTabela();
+//        System.out.println("Ericlecio: " + tabelaHash.buscar("Ericlecio"));
 
         Scanner scanner = new Scanner(System.in);
         CacheLRU<String, String> cacheLRU = new CacheLRU<>(3);
