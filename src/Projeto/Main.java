@@ -17,7 +17,7 @@ public class Main {
 //        System.out.println("--------------------------------------------");
 
         System.out.println("Buscar Dados de Sessão:");
-        System.out.println("Flavio: " + tabelaHash.buscar("Flavio", "dados_usuario1"));
+        System.out.println("Flavio: " + tabelaHash.buscar("Flavio"));
         System.out.println("Nielson: " + tabelaHash.buscar("Nielson"));
         System.out.println("Ericlecio: " + tabelaHash.buscar("Ericlecio"));
         System.out.println("Marcos: " + tabelaHash.buscar("Marcos"));
